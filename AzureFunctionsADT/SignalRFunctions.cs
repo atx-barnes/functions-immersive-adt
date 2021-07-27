@@ -34,6 +34,7 @@ namespace SignalRFunctions
                 log.LogInformation(property.Name + " - " + property.Value);
                 telemetryMessage.Add(property.Name, property.Value);
             }
+
             return signalRMessages.AddAsync(
             new SignalRMessage
             {
